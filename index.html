@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estilo Único - Tienda de Ropa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4edfa;
+      color: #333;
+    }
+
+    nav {
+      background-color: #6a0dad;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #b266ff;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    h2 {
+      color: #6a0dad;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .producto {
+      background-color: white;
+      border: 2px solid #e0c2ff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      padding-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.03);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .producto h3 {
+      margin: 1rem 0 0.5rem;
+      color: #6a0dad;
+    }
+
+    .producto p {
+      padding: 0 1rem;
+    }
+    #materiales {
+      padding: 3rem 2rem;
+      background-color: #f0e6fa;
+      text-align: center;
+    }
+
+    #materiales h2 {
+      color: #6a0dad;
+      margin-bottom: 2rem;
+    }
+
+    .materiales-lista {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .material {
+      background-color: white;
+      border: 2px solid #d6b3ff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .material:hover {
+      transform: translateY(-5px);
+    }
+
+    .material h3 {
+      color: #6a0dad;
+      margin-bottom: 0.5rem;
+    }
+    #galeria-modelos {
+      padding: 3rem 2rem;
+      background-color: #f4edfa;
+      text-align: center;
+    }
+
+    #galeria-modelos h2 {
+      color: #6a0dad;
+      margin-bottom: 2rem;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .modelo {
+      background-color: white;
+      border: 2px solid #e0c2ff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .modelo:hover {
+      transform: scale(1.02);
+    }
+
+    .modelo img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .modelo p {
+      padding: 1rem;
+      color: #333;
+    }
+
+    video, audio {
+      display: block;
+      margin: 2rem auto;
+      max-width: 90%;
+    }
+
+    footer {
+      background-color: #6a0dad;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #6a0dad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong style="color: white;">Estilo Único</strong></div>
+    <div>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-nosotros">Sobre Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#multimedia">Multimedia</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <header id="inicio">
+    <h1>Bienvenido a Estilo Único</h1>
+    <p>Moda con identidad, hecha para destacar</p>
+    <p>Moda con identidad, hecha para destacar</p>
+<p>Aquí no vienes a vestirte, vienes a expresarte.
+Cada prenda que diseñamos no sigue tendencias: las impone.<br>
+Creemos en el poder de lo auténtico, en la rebeldía del estilo,
+y en que tu ropa debe decir quién eres… <br>antes de que digas una palabra.</p>
+    <p>Esto no es moda. Esto es actitud.
+    Bienvenido a tu nueva piel.</p>
+  </header>
+
+  <section id="sobre-nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p style="text-align:center; max-width: 800px; margin: auto;">
+      En Estilo Único creemos que la ropa es una forma de arte. Diseñamos prendas con alma, para que te vistas con propósito y presencia. Cada pieza es una declaración.
+    </p>
+  </section>
+
+  <section id="productos">
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://image.hm.com/assets/hm/2b/71/2b7163ae1b502c0d184bbd310a9c8dd7f6f119c1.jpg?imwidth=1260" alt="Camisa Vintage">
+        <h3>Camisa Vintage</h3>
+        <p>Estilo retro con un toque moderno. Ideal para cualquier ocasión.</p>
+      </div>
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUilWgkSGyivS0z94-oWURcsr3l5ibc3-IBAbazIR_wrg6RPVvBi1v_2ILoD_6iC73CuM&usqp=CAU" alt="Pantalones Cargo">
+        <h3>Pantalones Cargo</h3>
+        <p>Comodidad y diseño urbano para los días más activos.</p>
+      </div>
+      <div class="producto">
+        <img src="https://image.hm.com/assets/hm/75/0c/750cc44b179769a6c212f0bd132be814cfe76567.jpg?imwidth=1260" alt="Sudadera Oversized">
+        <h3>Sudadera Oversized</h3>
+        <p>Abraza la comodidad con estilo. Suave, cálida y versátil.</p>
+      </div>
+      <div class="producto">
+        <img src="https://image.hm.com/assets/hm/e6/4a/e64a9727d09cad00687f739a9dac8507971acd88.jpg?imwidth=2160" alt="Camisa Vintage">
+        <h3>Camisa polo</h3>
+        <p>Estilo retro con un toque moderno. Ideal para cualquier ocasión.</p>
+      </div>
+      <div class="producto">
+        <img src="https://image.hm.com/assets/hm/db/57/db577720495912fd7a8c51473aa4c3c152bb29b7.jpg?imwidth=564" alt="Camisa Vintage">
+        <h3>Pantalon de vestir</h3>
+        <p>Estilo retro con un toque moderno. Ideal para cualquier ocasión.</p>
+      </div>
+      <div class="producto">
+        <img src="https://image.hm.com/assets/hm/4d/45/4d450591003b69e2c60a2c370693d0978aa879be.jpg?imwidth=1536" alt="Camisa Vintage">
+        <h3>Camisa de vestir</h3>
+        <p>Estilo retro con un toque moderno. Ideal para cualquier ocasión.</p>
+      </div>
+    </div>
+  </section>
+  <section id="materiales">
+    <h2>Materiales de la Prenda</h2>
+    <div class="materiales-lista">
+      <div class="material">
+        <h3>Algodón Orgánico</h3>
+        <p>Suave, transpirable y cultivado sin pesticidas. Ideal para piel sensible.</p>
+      </div>
+      <div class="material">
+        <h3>Poliéster Reciclado</h3>
+        <p>Reducimos residuos utilizando fibras recicladas de alta calidad.</p>
+      </div>
+      <div class="material">
+        <h3>Elastano</h3>
+        <p>Añade elasticidad para que te muevas con total libertad y confort.</p>
+      </div>
+    </div>
+  </section>
+  <section id="galeria-modelos">
+    <h2>Looks Inspiradores</h2>
+    <div class="galeria">
+      <div class="modelo">
+        <img src="https://i.pinimg.com/736x/2f/6a/c3/2f6ac3d21f8c21afef2e32fd5311cf20.jpg" alt="Modelo 1">
+        <p>Estilo casual con toques urbanos. Perfecto para cualquier día.</p>
+      </div>
+      <div class="modelo">
+        <img src="https://ss261.liverpool.com.mx/lg/1164434563.jpg" alt="Modelo 2">
+        <p>Un look elegante y fresco, ideal para salir con confianza.</p>
+      </div>
+      <div class="modelo">
+        <img src="https://i.pinimg.com/736x/32/b4/75/32b4752d35161c091cc06c8a73c038c5.jpg" alt="Modelo 3">
+        <p>Diseño contemporáneo para destacar en cada paso.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="multimedia">
+    <h2>Multimedia</h2>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Tu navegador no soporta el audio.
+    </audio>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align: center;">¿Te gustaría colaborar o hacer un pedido especial? Escríbenos a <a href="mailto:contacto@estilounico.com">contacto@estilounico.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Estilo Único. Con estilo y corazón desde Latinoamérica.
+  </footer>
+
+</body>
+</html>
